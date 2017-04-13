@@ -2,4 +2,6 @@
     <string name="app_name">My-Git-Flow</string>
     <string name="feature_1">Feature 1</string>
     <string name="feature_1_display">Hello World</string>
+    <string name="feature_2">Feature 2</string>
+    <string name="feature_2_display">Hello Android</string>
 </resources>
