@@ -8,6 +8,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button mFeature1;
+    private Button mFeature4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,19 @@ public class MainActivity extends AppCompatActivity {
                     mFeature1.setText(R.string.feature_1_display);
                 } else {
                     mFeature1.setText(R.string.feature_1);
+                }
+            }
+        });
+
+        mFeature4 = (Button) findViewById(R.id.feature_4);
+        mFeature4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (getResources().getString(R.string.feature_4)
+                        .equals(mFeature4.getText().toString())) {
+                    mFeature4.setText(R.string.feature_4_display);
+                } else {
+                    mFeature4.setText(R.string.feature_4);
                 }
             }
         });
