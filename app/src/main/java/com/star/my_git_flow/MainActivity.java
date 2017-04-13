@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button mFeature1;
     private Button mFeature2;
+    private Button mFeature3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,19 @@ public class MainActivity extends AppCompatActivity {
                     mFeature2.setText(R.string.feature_2_display);
                 } else {
                     mFeature2.setText(R.string.feature_2);
+                }
+            }
+        });
+
+        mFeature3 = (Button) findViewById(R.id.feature_3);
+        mFeature3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (getResources().getString(R.string.feature_3)
+                        .equals(mFeature3.getText().toString())) {
+                    mFeature3.setText(R.string.feature_3_display);
+                } else {
+                    mFeature3.setText(R.string.feature_3);
                 }
             }
         });

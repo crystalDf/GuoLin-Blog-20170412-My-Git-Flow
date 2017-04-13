@@ -16,4 +16,10 @@
         android:layout_height="wrap_content"
         android:text="@string/feature_2"/>
 
+    <Button
+        android:id="@+id/feature_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feature_3"/>
+
 </LinearLayout>
